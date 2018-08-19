@@ -5,11 +5,15 @@
 dotnet run // calls dotnet build to ensure that the build targets have been built, and then calls dotnet <assembly.dll> to run the target application.
 
 // compile code changes automatically
-dotnet run watch
+dotnet watch run
 
 // entity framework
 dotnet ef -h
   
   // create the initial migration
   dotnet ef migrations add InitialCreate
+
+  // apply the migration, and also create the database if it does not already exist
+  dotnet ef database update
+
 
