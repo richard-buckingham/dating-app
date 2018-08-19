@@ -1,0 +1,15 @@
+// Angular CLI
+
+
+// dotnet CLI
+dotnet run // calls dotnet build to ensure that the build targets have been built, and then calls dotnet <assembly.dll> to run the target application.
+
+// compile code changes automatically
+dotnet run watch
+
+// entity framework
+dotnet ef -h
+  
+  // create the initial migration
+  dotnet ef migrations add InitialCreate
+
